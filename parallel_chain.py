@@ -1,4 +1,4 @@
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import GoogleGenerativeAI
 from langchain_anthropic import ChatAnthropic
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
@@ -7,7 +7,7 @@ from langchain.schema.runnable import RunnableParallel
 
 load_dotenv()
 
-model1 = ChatOpenAI()
+model1 = GoogleGenerativeAI()
 
 model2 = ChatAnthropic(model_name='claude-3-7-sonnet-20250219')
 
