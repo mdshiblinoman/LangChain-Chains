@@ -1,4 +1,4 @@
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import GoogleGenerativeAI
 from langchain_anthropic import ChatAnthropic
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
@@ -10,7 +10,7 @@ from typing import Literal
 
 load_dotenv()
 
-model = ChatOpenAI()
+model = GoogleGenerativeAI()
 
 parser = StrOutputParser()
 
